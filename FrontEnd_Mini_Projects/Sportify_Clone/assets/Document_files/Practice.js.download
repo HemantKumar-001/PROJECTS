@@ -1,0 +1,11 @@
+let h1=document.querySelector("h1");
+
+function colorChanage(color,dalay){
+    new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            h1.style.backgroundColor=color;
+        },dalay);  
+        resolve("color changed!");
+    });
+}
+
